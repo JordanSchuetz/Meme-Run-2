@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'ComicSans';
+  src: url('design.graffiti.comicsansms.ttf'); /* IE9 Compat Modes */
+  src: url('design.graffiti.comicsansms.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: Whitney;
+  font-style: semibold;
+  font-weight: 650;
+  src: url(https://discordapp.com/assets/877ef48bf9fcfee590f0ba64de101b59.woff) format('woff')
+}
+/* CSS DIV ANIMATION */
+.wrapper { 
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 1s ease infinite;
+-z-animation: rainbow 1s ease infinite;
+-o-animation: rainbow 1s ease infinite;
+  animation: rainbow 1s ease infinite;}
+
+
+.tile{
+  background: url("dankmemes/ground.png") repeat-x;
+  height: 50px;
+  background-size: 50px 50px;
+  animation: clouds 100000s linear infinite;
+}
+.tilebottom{
+  background: url("dankmemes/ground2.png") repeat-x;
+  height: 50px;
+  background-size: 50px 50px;
+  animation: clouds 100000s linear infinite;
+}
+.tile-reverse{
+  background: url("dankmemes/ground.png") repeat-x;
+  height: 50px;
+  background-size: 50px 50px;
+  animation: cloudsreverse 100000s linear infinite;
+}
+.tilebottom-reverse{
+  background: url("dankmemes/ground2.png") repeat-x;
+  height: 50px;
+  background-size: 50px 50px;
+  animation: cloudsreverse 100000s linear infinite;
+}
+.tilefiller{
+  background: url("dankmemes/tile.jpg") repeat-x;
+  height: 50px;
+  background-size: 50px 50px;
+  animation: cloudsreverse 100000s linear infinite;
+}
+.discord{
+	background-color: #7289DA;
+	background-image:url(dankmemes/bg3.png);
+	background-size: 200px 200px;
+}
+.discordtitle{
+  font-smooth: auto;
+  padding-top:25px;
+  font-family: 'Whitney', sans-serif;
+  font-weight:700;
+  color:#fff;
+  font-size:40px
+}
+.discordlogo{
+  background-image:url(https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg);
+  width:250px;
+  height:65px;
+  background-size:100%;
+  display:inline-block;
+  background-repeat:no-repeat;
+  background-position:50%;
+  margin-left:-18px;
+  margin-right:-10px;
+  margin-bottom:-22px
+}
+@keyframes clouds {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 10000000px 0;
+  }
+}
+@keyframes cloudsreverse {
+  0% {
+    background-position: 10000000px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.lenny{
+    position: absolute;
+    white-space: nowrap;
+    animation: floatText 5s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes floatText{
+  from {
+    left: 00%;
+  }
+
+  to {
+    /* left: auto; */
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+	.glow-on-hover {
+	    width: 200px;
+	    height: 62px;
+	    border: none;
+	    font: 1.3rem Inconsolata, monospace;
+	    outline: none;
+	    font-size: 25pt;
+	    color: #FFFFFF;
+	    background: #000000;
+	    cursor: pointer;
+	    position: relative;
+	    z-index: 0;
+	    border-radius: 10px;
+
+	}
+
+	.glow-on-hover:before {
+		background: transparent;
+	    content: '';
+	    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	    position: absolute;
+	    top: -2px;
+	    left:-2px;
+	    background-size: 400%;
+	    z-index: -1;
+	    filter: blur(5px);
+	    width: calc(100% + 4px);
+	    height: calc(100% + 4px);
+	    animation: glowing 20s linear infinite;
+	    opacity: 1;
+	    transition: opacity .3s ease-in-out;
+	    border-radius: 10px;
+	    color: #000
+	    background: transparent;
+	}
+
+	.glow-on-hover:active {
+	    color: #000
+	}
+
+	.glow-on-hover:active:after {
+	    background: transparent;
+	}
+
+	.glow-on-hover:hover:before {
+	    opacity: 1;
+
+	}
+
+	.glow-on-hover:after {
+	    z-index: -1;
+	    content: '';
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    background-image:url("dankmemes/discordbutton.png");
+	    border: 0;
+  		background-size: 100%;
+	    left: 0;
+	    top: 0;
+	    border-radius: 10px;
+
+	}
+
+	@keyframes glowing {
+	    0% { background-position: 0 0; }
+	    50% { background-position: 400% 0; }
+	    100% { background-position: 0 0; }
+	}
+
+/*Downloaded from https://www.codeseek.co/fionnachan/windows-blue-screen-of-death-LrPVVp */
+.body-bluescreen {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Lucida Console;
+  line-height: 1.3em;
+  width: 100%;
+  color: white;
+  background-color: #000080;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.wrapper-bluescreen {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.typed-cursor {
+  display: none;
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  opacity: 1;
+  font-weight: 100;
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
