@@ -131,17 +131,6 @@
       <img src="dankmemes/airhorn.png" alt="Airhorn" class="airhorn shake-hard">
     </picture>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/VH836byIAzE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="-webkit-box-shadow: 0px 0px 19px 10px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 19px 10px rgba(0,0,0,0.75); box-shadow: 0px 0px 19px 10px rgba(0,0,0,0.75); max-width: 90%;" title="Meme Run 2 Trailer"></iframe>
-    <!-- <script type="text/javascript">
-      function init() {
-        var vidDefer = document.getElementsByTagName('iframe');
-        for (var i=0; i<vidDefer.length; i++) {
-          if(vidDefer[i].getAttribute('data-src')) {
-          vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-          }
-        } 
-      }
-      window.onload = init;
-    </script> -->
     <picture>
       <source srcset="dankmemes/airhorn-flip.webp" type="image/webp">
       <source srcset="dankmemes/airhorn-flip.png" type="image/png"> 
@@ -248,7 +237,6 @@
   //var terminal = "Potato-Computer: Last login: Sat Apr 20 4:20<br />WARNING: This game may trigger seizures for<br />people with photosensitive epilepsy<br />Potato-Computer: Press any key to continue:";
   var terminal = `WARNING: This game may trigger seizures for<br />people with photosensitive epilepsy<br />Potato-Computer: ls<br>// ---------------------<br>Applications Downloads   Library  Pictures<br>Memes        Lewds       CatPics  Over9000<br>Meme Run 2   PremiumSnap Simpdir  Music<br>// ---------------------<br>Potato-Computer: cd Meme Run 2<br>// ---------------------<br>MemeRun2.exe MemePics    Scripts  Audio<br>Scenes       Prefabs     Fonts    Textures<br>Animations   Characters  Shaders  Random<br>// ---------------------<br>`;
   document.querySelector('#terminal-height').innerHTML = terminal;
-  // console.log(document.getElementById("terminal-text").offsetTop);
   document.getElementById("monitor").style.minHeight = (document.getElementById("terminal-height").offsetHeight + document.getElementById("terminal-text").offsetTop*2) + "px";
 
   if (window. innerWidth <= 800){
@@ -287,7 +275,6 @@
 
     if ((msie && msie > 0) || !!navigator.userAgent.match(/Trident.*rv\:11\./)){
       someText = "";
-      console.log("IE!");
     } else if (window.innerWidth > 800){
       someText = `.horizontalMovement1 {
         animation: horizontalMovement 4.35s linear infinite alternate;
@@ -372,7 +359,6 @@
   var paragraph = "To be fair, you have to have a very high IQ to understand Meme Run 2.<br><br> The humour is extremely subtle, and without a solid grasp of dank memes most of the jokes will go over a typical gamer's head. There's also Illumanti's nihilistic outlook, which is deftly woven into his characterization- his personal philosophy draws heavily from internet 'SoundCloud' rappers, for instance.<br><br> The fans understand this stuff; they have the intellectual capacity to truly appreciate the depths of these jokes, to realize that they're not just funny - they say something deep about LIFE.<br><br> As a consequence people who dislike Meme Run 2 truly ARE idiots - of course they wouldn't appreciate, for instance, the humour itself is a cryptic reference to Montage Parodies back in 2011 when they weren't trash. This game was never made to be good, it was made as a joke but now I made a sequel because people keep asking me for it. So don't be mad, just be thankful I wasted 69 minutes of my life making this game. What fools ... how I pity them.<br><br> And yes, by the way, I DO have a Meme Run 2 tattoo. And no, you cannot see it. It's for the ladies' eyes only - and even then they have to demonstrate that they're within 5 IQ points of my own (preferably lower) beforehand. Nothin personnel kid . . .";
 
   document.querySelector('#bsod-height').innerHTML = paragraph;
-  // console.log(document.getElementById("terminal-text").offsetTop);
   document.getElementById("bsodScreen").style.minHeight = (document.getElementById("bsod-height").offsetHeight + document.getElementById("bsod-height").offsetTop*2) + "px";
 
   var p_len = paragraph.length+2;
@@ -397,7 +383,7 @@
 
       <div class="shop-row">
         <div class="shop-column1">
-          <div class="card">
+          <div class="card" onclick="ga('send', 'event', 'CTA', 'Click', 'bathwater_button'); window.open('https://www.paypal.com/instantcommerce/checkout/TEDD44G92NHGL', '_blank');" style="cursor: pointer;">
             <picture>
               <source data-srcset="dankmemes/bathwater.webp" type="image/webp">
               <source data-srcset="dankmemes/bathwater.jpg" type="image/jpg"> 
@@ -408,12 +394,12 @@
               <p class="price">$30.00</p>
               <p>Do you have what it takes to be a true S.I.M.P? You must first prove you have the TRUE THIRST. Take your skills to the next level with this limited edition bathwater you noob.</p>
             </div>
-            <button onclick="ga('send', 'event', 'CTA', 'Click', 'bathwater_button');window.open('https://www.paypal.com/instantcommerce/checkout/TEDD44G92NHGL', '_blank');">Buy Bathwater</button>
+            <button>Buy Bathwater</button>
           </div>
         </div>
         
         <div class="shop-column2">
-          <iframe width="100%" height="755" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1087835527&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sirterps" title="Sir Terpentene" target="_blank" style="color: #cccccc; text-decoration: none;">Sir Terpentene</a> · <a href="https://soundcloud.com/sirterps/sets/meme-run-2-official-soundtrack" title="Meme Run 2 Official Soundtrack" target="_blank" style="color: #cccccc; text-decoration: none;">Meme Run 2 Official Soundtrack</a></div>
+          <iframe width="100%" height="700" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1087835527&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sirterps" title="Sir Terpentene" target="_blank" style="color: #cccccc; text-decoration: none;" rel="noopener">Sir Terpentene</a> · <a href="https://soundcloud.com/sirterps/sets/meme-run-2-official-soundtrack" title="Meme Run 2 Official Soundtrack" target="_blank" style="color: #cccccc; text-decoration: none;" rel="noopener">Meme Run 2 Official Soundtrack</a></div>
         </div>
       </div>
     </div>
