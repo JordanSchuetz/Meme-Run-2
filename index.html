@@ -383,19 +383,21 @@
 
       <div class="shop-row">
         <div class="shop-column1">
-          <div class="card" onclick="window.open('https://www.paypal.com/instantcommerce/checkout/TEDD44G92NHGL', '_blank');" style="cursor: pointer;">
-            <picture>
-              <source data-srcset="dankmemes/bathwater.webp" type="image/webp">
-              <source data-srcset="dankmemes/bathwater.jpg" type="image/jpg"> 
-              <img data-src="dankmemes/bathwater.jpg" class="lazyload" alt="Bathwater" style="width:100%;">
-            </picture>
-            <div class="card-content">
-              <h1><u>MEME RUN BATHWATER</u></h1>
-              <p class="price">$30.00</p>
-              <p>Do you have what it takes to be a true S.I.M.P? You must first prove you have the TRUE THIRST. Take your skills to the next level with this limited edition bathwater you noob.</p>
+          <a href="https://www.paypal.com/instantcommerce/checkout/TEDD44G92NHGL" target="_blank">
+            <div class="card" onclick="ga('send', 'event', 'CTA', 'Click', 'bathwater_button');" style="cursor: pointer;">
+              <picture>
+                <source data-srcset="dankmemes/bathwater.webp" type="image/webp">
+                <source data-srcset="dankmemes/bathwater.jpg" type="image/jpg"> 
+                <img data-src="dankmemes/bathwater.jpg" class="lazyload" alt="Bathwater" style="width:100%;">
+              </picture>
+              <div class="card-content">
+                <h1><u>MEME RUN BATHWATER</u></h1>
+                <p class="price">$30.00</p>
+                <p>Do you have what it takes to be a true S.I.M.P? You must first prove you have the TRUE THIRST. Take your skills to the next level with this limited edition bathwater you noob.</p>
+              </div>
+              <button>Buy Bathwater</button>
             </div>
-            <button>Buy Bathwater</button>
-          </div>
+          </a>
         </div>
         
         <div class="shop-column2">
