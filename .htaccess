@@ -1,0 +1,3 @@
+<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|webp|gif|js|css|swf|ttf)$">
+    Header set Cache-Control "max-age=84600, public"
+</filesMatch>
