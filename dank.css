@@ -9,94 +9,213 @@
   font-weight: 650;
   src: url(https://discordapp.com/assets/877ef48bf9fcfee590f0ba64de101b59.woff) format('woff')
 }
+
+header{
+  margin: 0;
+  padding: 0;
+}
+
 /* CSS DIV ANIMATION */
 .wrapper { 
-background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-background-size: 1800% 1800%;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
 
--webkit-animation: rainbow 1s ease infinite;
--z-animation: rainbow 1s ease infinite;
--o-animation: rainbow 1s ease infinite;
-  animation: rainbow 1s ease infinite;}
+  -webkit-animation: rainbow 1s ease infinite;
+  -z-animation: rainbow 1s ease infinite;
+  -o-animation: rainbow 1s ease infinite;
+  animation: rainbow 1s ease infinite;
+}
 
 
 .tile{
   background: url("dankmemes/ground.png") repeat-x;
   height: 50px;
   background-size: 50px 50px;
-  animation: clouds 100000s linear infinite;
+  animation: clouds 0.5s linear infinite;
 }
+
 .tilebottom{
   background: url("dankmemes/ground2.png") repeat-x;
   height: 50px;
   background-size: 50px 50px;
-  animation: clouds 100000s linear infinite;
+  animation: clouds 0.5s linear infinite;
 }
+
 .tile-reverse{
   background: url("dankmemes/ground.png") repeat-x;
   height: 50px;
   background-size: 50px 50px;
-  animation: cloudsreverse 100000s linear infinite;
+  animation: cloudsreverse 0.5s linear infinite;
 }
+
 .tilebottom-reverse{
   background: url("dankmemes/ground2.png") repeat-x;
   height: 50px;
   background-size: 50px 50px;
-  animation: cloudsreverse 100000s linear infinite;
+  animation: cloudsreverse 0.5s linear infinite;
 }
+
 .tilefiller{
   background: url("dankmemes/tile.jpg") repeat-x;
   height: 50px;
   background-size: 50px 50px;
-  animation: cloudsreverse 100000s linear infinite;
-}
-.discord{
-	background-color: #7289DA;
-	background-image:url(dankmemes/bg3.png);
-	background-size: 200px 200px;
-}
-.discordtitle{
-  font-smooth: auto;
-  padding-top:25px;
-  font-family: 'Whitney', sans-serif;
-  font-weight:700;
-  color:#fff;
-  font-size:40px
-}
-.discordlogo{
-  background-image:url(https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg);
-  width:250px;
-  height:65px;
-  background-size:100%;
-  display:inline-block;
-  background-repeat:no-repeat;
-  background-position:50%;
-  margin-left:-18px;
-  margin-right:-10px;
-  margin-bottom:-22px
+  animation: cloudsreverse 0.5s linear infinite;
 }
 @keyframes clouds {
   0% {
     background-position: 0 0;
   }
   100% {
-    background-position: 10000000px 0;
+    background-position: 50px 0;
   }
 }
 @keyframes cloudsreverse {
   0% {
-    background-position: 10000000px 0;
+    background-position: 50px 0;
   }
   100% {
     background-position: 0 0;
   }
 }
+@media screen and (max-width: 1200px) {
+  @keyframes clouds {
+    100% {
+    }
+  }
+  @keyframes cloudsreverse {
+    100% {
+    }
+  }
+}
+.marketing-container{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 500px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.marketing-box{
+  padding: 30px;
+}
+.discordbtn{
+  width: 218.75px;
+  height: 70px;
+  -webkit-animation: discordGradient 1.0s linear infinite;
+  -moz-animation: discordGradient 1.0s linear infinite;
+  -ms-animation: discordGradient 1.0s linear infinite;
+  -o-animation: discordGradient 1.0s linear infinite;
+  animation: discordGradient 1.0s linear infinite;
+  cursor: pointer;
+}
+.discordbtn:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.steam{
+  padding: 30px;
+}
+.steambtn{
+  width: 218.75px;
+  height: 70px;
+  -webkit-animation: discordGradient 1.0s linear infinite;
+  -moz-animation: discordGradient 1.0s linear infinite;
+  -ms-animation: discordGradient 1.0s linear infinite;
+  -o-animation: discordGradient 1.0s linear infinite;
+  animation: discordGradient 1.0s linear infinite;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.steambtn:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.stonks {
+  width: 150px;
+  height: auto;
+  transform: translate3d(0,75px,0);
+}
+
+.youtubeVideo {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 1075px){
+  .youtubeVideo img {
+    display: none;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); box-shadow:0px 0px 20px 10px red; }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); box-shadow:0px 0px 20px 10px yellow; }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); box-shadow:0px 0px 20px 10px green; }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); box-shadow:0px 0px 20px 10px blue; }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); box-shadow:0px 0px 20px 10px orange; }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); box-shadow:0px 0px 20px 10px red; }
+}
+
+@keyframes honk {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*! * * * * * * * * * * * * * * * * * * * *\  
+  CSShake :: shake-hard
+  v1.5.0
+  CSS classes to move your DOM
+  (c) 2015 @elrumordelaluz
+  http://elrumordelaluz.github.io/csshake/
+  Licensed under MIT
+\* * * * * * * * * * * * * * * * * * * * */
+.shake-hard{display:inherit;transform-origin:center center}.shake-freeze,.shake-constant.shake-constant--hover:hover,.shake-trigger:hover .shake-constant.shake-constant--hover{animation-play-state:running;}.shake-freeze:hover,.shake-trigger:hover .shake-freeze,.shake-hard:hover,.shake-trigger:hover .shake-hard{animation-play-state:running}@keyframes shake-hard{2%{transform:translate(-9px, 3px) rotate(2.5deg)}4%{transform:translate(0px, 7px) rotate(.5deg)}6%{transform:translate(5px, -1px) rotate(-1.5deg)}8%{transform:translate(1px, 7px) rotate(.5deg)}10%{transform:translate(-9px, -9px) rotate(-2.5deg)}12%{transform:translate(-1px, 4px) rotate(-2.5deg)}14%{transform:translate(-2px, -3px) rotate(-.5deg)}16%{transform:translate(3px, 0px) rotate(3.5deg)}18%{transform:translate(5px, -2px) rotate(-1.5deg)}20%{transform:translate(2px, 9px) rotate(1.5deg)}22%{transform:translate(-9px, 5px) rotate(-.5deg)}24%{transform:translate(6px, 8px) rotate(1.5deg)}26%{transform:translate(-4px, 1px) rotate(-2.5deg)}28%{transform:translate(-4px, 6px) rotate(.5deg)}30%{transform:translate(10px, -6px) rotate(1.5deg)}32%{transform:translate(-8px, 5px) rotate(-2.5deg)}34%{transform:translate(9px, 4px) rotate(-1.5deg)}36%{transform:translate(-9px, 4px) rotate(.5deg)}38%{transform:translate(7px, -8px) rotate(3.5deg)}40%{transform:translate(8px, 1px) rotate(3.5deg)}42%{transform:translate(0px, -8px) rotate(2.5deg)}44%{transform:translate(-2px, -5px) rotate(2.5deg)}46%{transform:translate(-1px, -3px) rotate(3.5deg)}48%{transform:translate(2px, 5px) rotate(-1.5deg)}50%{transform:translate(8px, 0px) rotate(2.5deg)}52%{transform:translate(-1px, 0px) rotate(3.5deg)}54%{transform:translate(-5px, -3px) rotate(-1.5deg)}56%{transform:translate(-4px, 7px) rotate(-.5deg)}58%{transform:translate(1px, -1px) rotate(1.5deg)}60%{transform:translate(4px, 8px) rotate(.5deg)}62%{transform:translate(5px, -7px) rotate(1.5deg)}64%{transform:translate(-1px, -4px) rotate(-.5deg)}66%{transform:translate(-9px, -2px) rotate(-1.5deg)}68%{transform:translate(4px, 6px) rotate(2.5deg)}70%{transform:translate(-6px, 5px) rotate(-1.5deg)}72%{transform:translate(-4px, 2px) rotate(1.5deg)}74%{transform:translate(-4px, -5px) rotate(-1.5deg)}76%{transform:translate(3px, 9px) rotate(-.5deg)}78%{transform:translate(2px, 1px) rotate(-1.5deg)}80%{transform:translate(4px, 4px) rotate(2.5deg)}82%{transform:translate(-6px, 9px) rotate(-2.5deg)}84%{transform:translate(4px, 6px) rotate(3.5deg)}86%{transform:translate(5px, 9px) rotate(-1.5deg)}88%{transform:translate(1px, 4px) rotate(-1.5deg)}90%{transform:translate(5px, 3px) rotate(1.5deg)}92%{transform:translate(9px, -2px) rotate(1.5deg)}94%{transform:translate(9px, 3px) rotate(2.5deg)}96%{transform:translate(-1px, 6px) rotate(.5deg)}98%{transform:translate(-6px, -2px) rotate(-.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-hard,.shake-trigger:hover .shake-hard,.shake-hard.shake-freeze,.shake-hard.shake-constant{animation-name:shake-hard;animation-duration:100ms;animation-timing-function:ease-in-out;animation-iteration-count:infinite}
+/* END OF USAGE */
+
+@keyframes discordGradient {
+    0% { box-shadow:0px 0px 20px 10px red; }
+    20% { box-shadow:0px 0px 20px 10px yellow; }
+    40% { box-shadow:0px 0px 20px 10px green; }
+    60% { box-shadow:0px 0px 20px 10px blue; }
+    80% { box-shadow:0px 0px 20px 10px orange; }
+    100% { box-shadow:0px 0px 20px 10px red; }
+}
+
+@-webkit-keyframes discordGradient {
+    0% { -webkit-box-shadow:0px 0px 20px 10px red; }
+    20% { -webkit-box-shadow:0px 0px 20px 10px yellow; }
+    40% { -webkit-box-shadow:0px 0px 20px 10px green; }
+    60% { -webkit-box-shadow:0px 0px 20px 10px blue; }
+    80% { -webkit-box-shadow:0px 0px 20px 10px orange; }
+    100% { -webkit-box-shadow:0px 0px 20px 10px red; }
+}
+
 .lenny{
     position: absolute;
     white-space: nowrap;
     animation: floatText 5s infinite alternate ease-in-out;
 }
-
 @-webkit-keyframes floatText{
   from {
     left: 00%;
@@ -250,4 +369,242 @@ background-size: 1800% 1800%;
   100% {
     opacity: 1;
   }
+}
+
+.shop {
+  /*background: #3a3a3c;*/
+  padding: 35px;
+  /*background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 1s ease infinite;
+  -z-animation: rainbow 1s ease infinite;
+  -o-animation: rainbow 1s ease infinite;
+  animation: rainbow 1s ease infinite;*/
+
+  font-family: fixedsys,sans-serif;
+  font-style: normal;
+  font-size: 2.5vw;
+
+  width: 100%;
+  color: white;
+  background-color: #000080;
+  padding: 10px 0;
+  margin: 0;
+  line-height: normal;
+}
+
+.shop h1 {
+  font-family: fixedsys,sans-serif;
+  font-style: normal;
+  font-size: 4vw;
+}
+
+.shop h1 i {
+  font-size: 3.5vw;
+  padding: 10px;
+}
+
+.mobile-hide {}
+
+/*.shop-frame {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  border: 3px solid #ccc;
+  background: #eee;
+  margin: auto;
+  padding: 15px 10px;
+}*/
+
+.shop-row{
+  display: -webkit-flex; /* Safari */     
+  display: flex; /* Standard syntax */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.shop-row .shop-column1{
+  flex: 40%;
+  padding: 20px;
+}
+
+.shop-row .shop-column2{
+  flex: 60%;
+  padding: 20px;
+}
+
+/*.shop-frame .shop-column button {
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  border-radius: 25px;
+  border: 5px solid #284cff;
+  font-family: fixedsys,sans-serif;
+  font-style: normal;
+  font-size: 4vw;
+  text-shadow: 0 3px 5px rgba(0,0,0,0.25);
+  white-space: nowrap;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  background-image: url(dankmemes/water-hover.png);
+  background-repeat: repeat-x;
+  background-position: 0% 0%;
+  transition: 1.5s ease;
+  max-width: 100%;
+  height: auto;
+}*/
+
+/*.shop-frame .shop-column button:hover {
+  background-position: -200% 70%;
+}*/
+
+.card {
+  -webkit-box-shadow: 0px 0px 19px 10px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 19px 10px rgba(0,0,0,0.75);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h1 {
+  font-size: 35px;
+}
+
+.card h1 i {
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 22px;
+}
+
+.price {
+  font-size: 29px !important;
+  color: green;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 22px;
+  padding: 15px;
+  background-image: url(dankmemes/water.png);
+  background-repeat: repeat-x;
+  background-position: 0% -1250%;
+  transition: 1s ease;
+}
+
+.card:hover button {
+  background-position: 0% 0%;
+}
+
+/*.card button:hover {
+  opacity: 0.7;
+}*/
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 600px) {
+
+  .shop-row .shop-column1{
+    flex: 100%;
+  }
+
+  .shop-row .shop-column2{
+    flex: 100%;
+  }
+
+  .card {
+    max-width: 500px;
+  }
+
+  .shop-row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card h1 i {
+    display: none;
+  }
+}
+
+.about {
+  display: -webkit-flex; /* Safari */     
+  display: flex; /* Standard syntax */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+
+  color: white;
+  background-color: #000080;
+}
+
+.about-row{
+  display: -webkit-flex; /* Safari */     
+  display: flex; /* Standard syntax */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+  flex-direction: row;
+}
+
+.about-row .about-column{
+  flex: 33%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-row .about-column h1 {
+  font-family: fixedsys,sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.about-row .about-column p {
+  font-family: fixedsys,sans-serif;
+  font-style: normal;
+  font-size: 35px;
+  line-height: normal;
+}
+
+.about-row .about-column a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1020px) {
+  .about-row .about-column{
+    flex: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-row :nth-child(1) { order: 2; }
+  .about-row :nth-child(2) { order: 1; }
+  .about-row :nth-child(3) { order: 3; }
 }
